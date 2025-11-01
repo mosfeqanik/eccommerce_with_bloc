@@ -87,8 +87,11 @@ https://dummyjson.com/products?limit=10&page=1
 ```
 
 ScreenShots of application
-<br /> <img align="left" alt="verify_page" width="360px" src="https://github.com/mosfeqanik/eccommerce-.git" /><img align="left" alt="verify_page" width="360px" src="https://github.com/mosfeqanik/todo-with-gyro-and-accelerometer-sensors/blob/main/assesment_screenshot/full%20app%20screenplay.gif" /><br />
+<br /> 
+<img align="left" alt="screenrecord" width="360px" src="https://github.com/mosfeqanik/eccommerce_with_bloc/blob/main/screenrecord.gif" />
 
+<br />
 
+<br>
 Author:
 Md. Mosfeq Anik
