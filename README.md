@@ -86,15 +86,14 @@ To run the project locally, follow these steps:
 https://dummyjson.com/products?limit=10&page=1
 ```
 
-##ScreenShots of application
+## ScreenRecord
 
 <br /> 
-<img align="left" alt="screenrecord" width="360px" src="https://github.com/mosfeqanik/eccommerce_with_bloc/blob/main/screenrecord.gif" />
+<img alt="screenRecord" width="360px" src="https://github.com/mosfeqanik/eccommerce_with_bloc/blob/main/screenrecord.gif" />
 
 <br />
 
-<br>
 
 
-##Author:
+## Author:
 Md. Mosfeq Anik
