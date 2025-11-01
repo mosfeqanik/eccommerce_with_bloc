@@ -50,7 +50,7 @@ class _ProductsPageState extends State<ProductsPage> {
       appBar: AppBar(title: const Text("E-Commerce Products")),
       body: BlocBuilder<ProductBloc, ProductState>(
         builder: (context, state) {
-          if (state.status == ProductStatus.initial && state.products.isEmpty) {
+          if (state.status == ProductStatus.loading && state.products.isEmpty) {
             return Center(
               child: ElevatedButton(
                 onPressed: () => context.read<ProductBloc>().add(ProductFetched(false)),
@@ -59,7 +59,7 @@ class _ProductsPageState extends State<ProductsPage> {
             );
           }
 
-          if (state.status == ProductStatus.failure && state.products.isEmpty) {
+          if (state.status == ProductStatus.empty && state.products.isEmpty) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +80,7 @@ class _ProductsPageState extends State<ProductsPage> {
             child: ListView.separated(
               controller: _scrollController,
               padding: const EdgeInsets.all(10),
-              itemCount: state.products.length + (state.status == ProductStatus.initial ? 1 : 0),
+              itemCount: state.products.length + (state.status == ProductStatus.loading ? 1 : 0),
               separatorBuilder: (_, __) => const SizedBox(height: 10),
               itemBuilder: (context, i) {
                 if (i >= state.products.length) {

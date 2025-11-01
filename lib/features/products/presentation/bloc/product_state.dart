@@ -1,11 +1,11 @@
 import '../../data/models/product_model.dart';
 import '../../domain/entities/product.dart';
 import 'product_bloc.dart';
-enum ProductStatus { initial, success, failure }
+enum ProductStatus { loading, success, empty ,error}
 
 class ProductState {
   const ProductState( {
-    this.status = ProductStatus.initial,
+    this.status = ProductStatus.loading,
     this.products = const <ProductElement>[],
     this.page = 1,
   });

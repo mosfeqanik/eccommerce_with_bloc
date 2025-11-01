@@ -29,7 +29,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
     try {
       if (event.isRefreshed) {
         emit(state.copyWith(
-          status: ProductStatus.initial,
+          status: ProductStatus.loading,
           page: 1,
           products: [],
         ));
@@ -41,7 +41,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
         page: state.page + 1, // increment for next fetch
       ));
     } catch (_) {
-      emit(state.copyWith(status: ProductStatus.failure));
+      emit(state.copyWith(status: ProductStatus.empty));
     }
   }
 
