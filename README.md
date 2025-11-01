@@ -50,7 +50,7 @@ Easy to extend for categories, search, and filters
 │      └─ products_page.dart
 └─ main.dart
 ```
-G## Getting Started
+## Getting Started
 
 To run the project locally, follow these steps:
 
@@ -85,6 +85,9 @@ To run the project locally, follow these steps:
 ```bash 
 https://dummyjson.com/products?limit=10&page=1
 ```
+
+ScreenShots of application
+<br /> <img align="left" alt="verify_page" width="360px" src="https://github.com/mosfeqanik/eccommerce-.git" /><img align="left" alt="verify_page" width="360px" src="https://github.com/mosfeqanik/todo-with-gyro-and-accelerometer-sensors/blob/main/assesment_screenshot/full%20app%20screenplay.gif" /><br />
 
 
 Author:
